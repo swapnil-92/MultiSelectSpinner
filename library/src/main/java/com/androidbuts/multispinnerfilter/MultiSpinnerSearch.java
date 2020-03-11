@@ -194,8 +194,7 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
                     //Log.i(TAG, adapter.mOriginalValues.get(i).getName());
                 }
                 adapter.notifyDataSetChanged();
-
-
+                onCancel(dialog);//This will add the selected comma separated names to spinner 
             }
         });
 
